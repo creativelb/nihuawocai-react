@@ -6,16 +6,22 @@ import reportWebVitals from './reportWebVitals';
 
 import store from './store/store.js';
 import { Provider } from 'react-redux';
+import { HashRouter } from 'react-router-dom';
 
 import './style/base.css'
 import './style/normalize.css'
+import './style/mixin.scss'
+import './style/variable.scss'
+import 'antd/dist/antd.css';
 
 ReactDOM.render(
-  <Provider store={store}>
-		<React.StrictMode>
-			<App />
-		</React.StrictMode>
-  </Provider>,
+	<Provider store={store}>
+		<HashRouter>
+			<React.StrictMode>
+				<App />
+			</React.StrictMode>
+		</HashRouter>
+	</Provider>,
   document.getElementById('root')
 );
 

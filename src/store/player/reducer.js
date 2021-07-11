@@ -1,7 +1,7 @@
 let initState = {
     play: false,
     currentTime: 0,
-
+    currentSong: {}
 }
 
 let playerReducer = function(state = initState, action) {

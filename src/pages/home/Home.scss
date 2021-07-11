@@ -1,0 +1,25 @@
+.Home {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;
+    .create-game,.join-game{
+        width: 300px;height: 50px;line-height: 50px;
+        text-align: center;color: #000;
+        box-shadow: 0px 2px 5px 1px rgba($color: #000, $alpha: 0.1);
+    }
+    .dialog{
+        position: absolute;display: flex; justify-content: center;align-items: center;
+        width: 100%;height: 100%; background-color:rgba($color: #ccc, $alpha: 0.1);
+        .roomid-dialog{
+            display: flex;flex-direction: column;align-items: center;background-color: #fff;
+            width: 300px; height: 300px;box-shadow: 0 3px 5px 1px rgba($color: #000000, $alpha: 0.1);
+            h4{margin: 50px 0;}
+            .ant-input{height: 25px; padding: 0 10px;}
+            .ant-btn{margin-top: 15px;}
+        }
+    }
+}
+.Home-message-error{
+    margin-top: 10vh;
+}
